@@ -55,7 +55,9 @@ overflow.
 Below 860 x 620 the columns would be unusably narrow, so the shell falls back to ordinary document
 scrolling rather than squeezing.
 
-Content stops widening at `--pd-measure` (1040px) and centres past it. The bars keep their
+Content stops widening at `--pd-measure` (1040px) and centres past it. That is the only place width
+is capped: components inside a card do not cap themselves as well, or they leave a dead strip along
+the card edge. The bars keep their
 full-width background but align their contents to the same measure, so the brand sits over the left
 edge of the first card. A reading is a fixed amount of information; stretching it across a wide
 monitor only pushes labels further from their values.
