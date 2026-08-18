@@ -36,7 +36,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Status | `.status` + `.ok/.warn/.error`, `.dot` + `.on/.warn/.error`, `.conn-state`, `.badge` + `.ok/.warn/.danger` |
 | Buttons | `.btn` + `.primary/.danger/.ghost/.small/.big`, `.iconbtn`, `.actions` |
 | Forms | `select`, `input[type=text\|number]` (element selectors; the select caret is drawn by the library) |
-| Cards | `.grid`, `.card` |
+| Cards | `.grid`, `.card`, `.card-head`, `.card-head-right` |
 | Readout | `.readout`, `.readout-label/value/side/aux` |
 | Lists | `.fields`, `.fields .row`, `.fields.compact`, `.block-field` |
 | Meters | `.meters`, `.meter`, `.meter-name/track/fill/value`, `.meter-fill.warn/.crit` |
