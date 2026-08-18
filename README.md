@@ -38,7 +38,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Forms | `select`, `input[type=text\|number]` (element selectors; the select caret is drawn by the library) |
 | Cards | `.grid`, `.card`, `.card-head`, `.card-head-right` |
 | Readout | `.readout`, `.readout-label/value/side/aux` |
-| Lists | `.fields`, `.fields .row`, `.fields.compact`, `.block-field` |
+| Lists | `.fields`, `.fields .row`, `.fields.compact`, `.fields.chips`, `.block-field` |
 | Tiles | `.tiles`, `.tile` (+`.warn`/`.crit`), `.tile-label`, `.tile-value` |
 | Meters | `.meters`, `.meter`, `.meter-name/track/fill/value`, `.meter-fill.warn/.crit` |
 | Notices | `.hint` + `.warn`, `.footnote`, `.banner` + `.warn` |
