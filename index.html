@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PowerDiag UI</title>
+<meta name="description" content="Component reference for the PowerDiag browser tools.">
+<meta name="theme-color" content="#0b0f14">
+<link rel="stylesheet" href="./powerdiag.css">
+<style>
+  /* Reference page only — not part of the library. */
+  .demo { max-width: 1100px; margin: 0 auto; }
+  .demo section { margin-bottom: 34px; }
+  .demo h3 {
+    margin: 0 0 12px; font-size: .74rem; font-weight: 600;
+    letter-spacing: .15em; text-transform: uppercase; color: var(--pd-text-dim);
+  }
+  .demo code {
+    font-family: var(--pd-mono); font-size: .8rem; color: var(--pd-text-dim);
+  }
+  .swatches { display: flex; gap: 10px; flex-wrap: wrap; }
+  .swatch { width: 92px; }
+  .swatch i { display: block; height: 44px; border: 1px solid var(--pd-line); }
+  .swatch span { display: block; font-family: var(--pd-mono); font-size: .68rem; color: var(--pd-text-dim); margin-top: 5px; }
+</style>
+</head>
+<body>
+
+<header class="appbar">
+  <div class="appbar-left">
+    <a class="appbar-brand" href="https://powerdiag.jp">PowerDiag</a>
+    <span class="appbar-product">UI</span>
+  </div>
+  <div class="appbar-right">
+    <span class="conn-state"><i class="dot on"></i><span class="mono">reference</span></span>
+    <a class="iconbtn" href="https://powerdiag.jp" aria-label="Close">&times;</a>
+  </div>
+</header>
+
+<main class="app-content demo">
+
+  <section>
+    <h3>Colour</h3>
+    <div class="swatches">
+      <div class="swatch"><i style="background:var(--pd-bg)"></i><span>--pd-bg</span></div>
+      <div class="swatch"><i style="background:var(--pd-bg-raised)"></i><span>raised</span></div>
+      <div class="swatch"><i style="background:var(--pd-bg-sunken)"></i><span>sunken</span></div>
+      <div class="swatch"><i style="background:var(--pd-accent)"></i><span>accent</span></div>
+      <div class="swatch"><i style="background:var(--pd-warn)"></i><span>warn</span></div>
+      <div class="swatch"><i style="background:var(--pd-danger)"></i><span>danger</span></div>
+      <div class="swatch"><i style="background:var(--pd-info)"></i><span>info</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Buttons <code>.btn</code></h3>
+    <div class="actions">
+      <button class="btn primary">Primary</button>
+      <button class="btn">Default</button>
+      <button class="btn danger">Danger</button>
+      <button class="btn ghost">Ghost</button>
+      <button class="btn small">Small</button>
+      <button class="btn" disabled>Disabled</button>
+      <a class="iconbtn" href="#" aria-label="Close">&times;</a>
+      <select><option>日本語</option><option>English</option><option>中文</option></select>
+    </div>
+    <p class="footnote"><code>.big</code> is for the single action on a connect screen.</p>
+    <p><button class="btn primary big">Connect</button></p>
+  </section>
+
+  <section>
+    <h3>Status <code>.status .dot .badge</code></h3>
+    <div class="actions">
+      <span class="conn-state"><i class="dot"></i><span class="status">Idle</span></span>
+      <span class="conn-state"><i class="dot on"></i><span class="status ok">Connected</span></span>
+      <span class="conn-state"><i class="dot warn"></i><span class="status warn">Degraded</span></span>
+      <span class="conn-state"><i class="dot error"></i><span class="status error">No response</span></span>
+    </div>
+    <p class="actions" style="margin-top:14px">
+      <span class="badge ok">Unlocked</span>
+      <span class="badge warn">Check</span>
+      <span class="badge danger">Locked</span>
+    </p>
+  </section>
+
+  <section>
+    <h3>Readout <code>.readout</code></h3>
+    <div class="readout">
+      <div>
+        <span class="readout-label">Pack voltage</span>
+        <output class="readout-value">18.42 V</output>
+      </div>
+      <div class="readout-side">
+        <output class="readout-aux">BL1860B</output>
+        <span class="badge ok">Unlocked</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Cards, lists and meters</h3>
+    <div class="grid">
+
+      <article class="card">
+        <h2>Meters</h2>
+        <div class="meters">
+          <div class="meter">
+            <span class="meter-name">Cell 1</span>
+            <span class="meter-track"><span class="meter-fill" style="width:82%"></span></span>
+            <span class="meter-value">3.94 V</span>
+          </div>
+          <div class="meter">
+            <span class="meter-name">Cell 2</span>
+            <span class="meter-track"><span class="meter-fill" style="width:79%"></span></span>
+            <span class="meter-value">3.89 V</span>
+          </div>
+          <div class="meter">
+            <span class="meter-name">Cell 3</span>
+            <span class="meter-track"><span class="meter-fill warn" style="width:45%"></span></span>
+            <span class="meter-value">3.27 V</span>
+          </div>
+          <div class="meter">
+            <span class="meter-name">Cell 4</span>
+            <span class="meter-track"><span class="meter-fill crit" style="width:24%"></span></span>
+            <span class="meter-value">2.91 V</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card">
+        <h2>Fields</h2>
+        <dl class="fields">
+          <div class="row"><dt>Model</dt><dd>BL1860B</dd></div>
+          <div class="row"><dt>State</dt><dd>UNLOCKED</dd></div>
+          <div class="row"><dt>Charge count</dt><dd>317</dd></div>
+          <div class="row"><dt>Capacity</dt><dd>6.0 Ah</dd></div>
+        </dl>
+        <div class="block-field">
+          <dt>Raw frame</dt>
+          <dd class="mono wrap">33 0F 00 F1 26 BD 13 14 58 00 00 94 94 40 21 D0 80 02 4E 23</dd>
+        </div>
+        <p class="footnote">* Footnotes sit at the bottom of a card.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <h3>Notices <code>.hint .banner</code></h3>
+    <p class="hint">A hint is quiet, secondary guidance.</p>
+    <p class="hint warn">A warning hint is the same shape, louder colour.</p>
+    <p class="banner" style="margin-top:14px">A banner is for something blocking, such as an unsupported browser.</p>
+  </section>
+
+  <section>
+    <h3>Log <code>.log</code></h3>
+    <div class="log">
+      <div class="log-line tx">10:24:31 &gt;&gt; AA 00</div>
+      <div class="log-line rx">10:24:32 &lt;&lt; 26 BD 13 14 58 00 00 94</div>
+      <div class="log-line err">10:24:34 !! No response</div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="statusbar">
+  <span class="status">Component reference</span>
+  <span class="copyright">&copy; 2026 powerdiag.jp</span>
+</footer>
+
+</body>
+</html>
