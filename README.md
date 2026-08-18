@@ -39,6 +39,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Cards | `.grid`, `.card`, `.card-head`, `.card-head-right` |
 | Readout | `.readout`, `.readout-label/value/side/aux` |
 | Lists | `.fields`, `.fields .row`, `.fields.compact`, `.block-field` |
+| Tiles | `.tiles`, `.tile` (+`.warn`/`.crit`), `.tile-label`, `.tile-value` |
 | Meters | `.meters`, `.meter`, `.meter-name/track/fill/value`, `.meter-fill.warn/.crit` |
 | Notices | `.hint` + `.warn`, `.footnote`, `.banner` + `.warn` |
 | Log | `.log`, `.log-line` + `.tx/.rx/.err` |
