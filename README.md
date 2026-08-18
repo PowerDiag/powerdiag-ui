@@ -77,6 +77,17 @@ Light mode is handled through `prefers-color-scheme` — only the surface and te
 layout does not. Corners are near-square by design (`--pd-radius: 3px`): these are instruments, not
 consumer apps.
 
+## Typefaces
+
+The sans stack is chosen by `<html lang>`, which the tool sets when the language changes. This
+matters more than it looks: `system-ui` resolves to the OS preference, a Japanese face on a Japanese
+machine, and that face covers Han characters — so the browser never falls through, and Chinese text
+comes out with Japanese glyph shapes. The language face therefore comes *before* `system-ui`.
+
+The limit is what is installed. A Japanese Windows with no Simplified Chinese face still falls back
+to a Japanese one; only shipping a web font fixes that, and a CJK web font is megabytes. Worth it
+for a customer-facing page in that language, not for a bench tool.
+
 ## Conventions
 
 * State goes on a modifier class (`.ok`, `.warn`, `.danger`), never a separate component.
