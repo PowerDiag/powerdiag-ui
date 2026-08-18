@@ -137,6 +137,9 @@ body {
   letter-spacing: .14em; color: var(--pd-text-dim);
 }
 
+/* Device identity in the bar: which port, which firmware. */
+.port { font-family: var(--pd-mono); font-size: .78rem; color: var(--pd-text-dim); }
+
 /* ==========================================================================
    Status bar
    ========================================================================== */
