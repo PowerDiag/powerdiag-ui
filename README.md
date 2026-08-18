@@ -34,7 +34,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | App bar | `.appbar`, `.appbar-brand`, `.appbar-product`, `.appbar-left/right`, `.port` |
 | Status bar | `.statusbar`, `.statusbar-right`, `.build`, `.copyright` |
 | Status | `.status` + `.ok/.warn/.error`, `.dot` + `.on/.warn/.error`, `.conn-state`, `.badge` + `.ok/.warn/.danger` |
-| Buttons | `.btn` + `.primary/.danger/.ghost/.small/.big`, `.iconbtn`, `.actions` |
+| Buttons | `.btn` + `.primary/.danger/.ghost/.small/.big`, `.iconbtn`, `.actions`, `.action-group` (+`.danger`), `.action-group-row`, `.action-group-label` |
 | Forms | `select`, `input[type=text\|number]` (element selectors; the select caret is drawn by the library) |
 | Cards | `.grid`, `.card`, `.card-head`, `.card-head-right` |
 | Readout | `.readout`, `.readout-label/value/side/aux` |
