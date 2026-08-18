@@ -83,6 +83,12 @@ consumer apps.
 * Numbers use `--pd-mono` with `tabular-nums`, so figures do not jitter as readings update.
 * Nothing here depends on JavaScript, and nothing here is loaded from another origin.
 
+## Icons
+
+`.iconbtn` expects an inline SVG child, sized and coloured by the library. The close glyph used in
+the tools is Material Symbols `close` (Apache-2.0), inlined rather than linked: nothing here loads
+from another origin, so the tools keep working offline.
+
 ## Licence
 
 MIT — see [LICENSE.md](LICENSE.md).
