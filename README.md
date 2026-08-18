@@ -35,7 +35,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Status bar | `.statusbar`, `.copyright` |
 | Status | `.status` + `.ok/.warn/.error`, `.dot` + `.on/.warn/.error`, `.conn-state`, `.badge` + `.ok/.warn/.danger` |
 | Buttons | `.btn` + `.primary/.danger/.ghost/.small/.big`, `.iconbtn`, `.actions` |
-| Forms | `select`, `input[type=text\|number]`; wrap a select in `.select` for the drawn caret |
+| Forms | `select`, `input[type=text\|number]` (element selectors; the select caret is drawn by the library) |
 | Cards | `.grid`, `.card` |
 | Readout | `.readout`, `.readout-label/value/side/aux` |
 | Lists | `.fields`, `.fields .row`, `.fields.compact`, `.block-field` |
