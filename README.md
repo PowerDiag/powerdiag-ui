@@ -42,6 +42,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Tiles | `.tiles`, `.tile` (+`.warn`/`.crit`), `.tile-label`, `.tile-value` |
 | Meters | `.meters`, `.meter`, `.meter-name/track/fill/value`, `.meter-fill.warn/.crit` |
 | Inverted | `.invert` |
+| Progress | `.progress` |
 | Notices | `.hint` + `.warn`, `.footnote`, `.banner` + `.warn` |
 | Log | `.log`, `.log-line` + `.tx/.rx/.err` |
 | Utilities | `.hidden`, `.mono`, `.wrap` |
