@@ -164,6 +164,19 @@
   </section>
 
   <section>
+    <h3>Dialog <code>dialog.dialog</code></h3>
+    <p><button class="btn danger" onclick="document.getElementById('demo-dialog').showModal()">Open dialog</button></p>
+    <dialog id="demo-dialog" class="dialog">
+      <p class="dialog-title danger">Writes to the battery</p>
+      <p class="dialog-body">This clears the error flags on the pack. On some batteries it also resets stored counters such as the charge count.</p>
+      <form method="dialog" class="dialog-actions">
+        <button value="cancel" class="btn ghost">Cancel</button>
+        <button value="ok" class="btn danger">Continue</button>
+      </form>
+    </dialog>
+  </section>
+
+  <section>
     <h3>Log <code>.log</code></h3>
     <div class="log">
       <div class="log-line tx">10:24:31 &gt;&gt; AA 00</div>

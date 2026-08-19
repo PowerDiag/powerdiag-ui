@@ -42,6 +42,7 @@ its own copy still works on `localhost` and offline. Copy the file in and update
 | Tiles | `.tiles`, `.tile` (+`.warn`/`.crit`), `.tile-label`, `.tile-value` |
 | Meters | `.meters`, `.meter`, `.meter-name/track/fill/value`, `.meter-fill.warn/.crit` |
 | Inverted | `.invert` |
+| Dialog | `dialog.dialog`, `.dialog-title` (+`.danger`), `.dialog-body`, `.dialog-actions` |
 | Progress | `.progress` |
 | Notices | `.hint` + `.warn`, `.footnote`, `.banner` + `.warn` |
 | Log | `.log`, `.log-line` + `.tx/.rx/.err` |
@@ -102,7 +103,8 @@ for a customer-facing page in that language, not for a bench tool.
 
 * State goes on a modifier class (`.ok`, `.warn`, `.danger`), never a separate component.
 * Numbers use `--pd-mono` with `tabular-nums`, so figures do not jitter as readings update.
-* Nothing here depends on JavaScript, and nothing here is loaded from another origin.
+* Nothing here needs script to render — the dialog styles the native `<dialog>`, which the
+  app opens with `showModal()` — and nothing here is loaded from another origin.
 
 ## Icons
 
