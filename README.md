@@ -89,7 +89,7 @@ consumer apps.
 
 ## Typefaces
 
-The sans stack is chosen by `<html lang>` (`ja`, `zh`, `zh-TW`, `ko`, `th`, and a Latin default), which the tool sets when the language changes. This
+The sans stack is chosen by `<html lang>` (`ja`, `zh`, `zh-TW`, `ko`, `th`, `vi`, and a Latin default), which the tool sets when the language changes. This
 matters more than it looks: `system-ui` resolves to the OS preference, a Japanese face on a Japanese
 machine, and that face covers Han characters — so the browser never falls through, and Chinese text
 comes out with Japanese glyph shapes. The language face therefore comes *before* `system-ui`.
